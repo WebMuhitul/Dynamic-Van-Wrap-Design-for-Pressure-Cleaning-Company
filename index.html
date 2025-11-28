@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pressure Washing Perth | Van Wrap Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #00a8ff;
+            --dark: #0a2540;
+            --light: #f8f9fa;
+            --accent: #ffcc00;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        
+        .hero-image {
+            margin: 40px 0;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Van Design Section */
+        .van-design {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .van-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .van-view {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .van-view h3 {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .van-view img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .google-rating {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .google-rating img {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .review-card::before {
+            content: """;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+        }
+        
+        .review-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .review-card h4 {
+            text-align: right;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--dark);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+            width: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            margin-right: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--dark);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .footer-logo h2 {
+            font-size: 1.5rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links li {
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://irp.cdn-website.com/69496bed/dms3rep/multi/diamondpressurewashing.jpg" alt="Diamond Pressure Washing Logo">
+                <!-- <h1>Diamond Pressure Washing</h1> -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#design">Van Design</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Professional Van Wrap Design for Pressure Cleaning Business</h2>
+            <p>Showcasing a dynamic and eye-catching partial van wrap design for Diamond Pressure Washing Perth</p>
+            
+            <div class="hero-image">
+                <img src="https://res.cloudinary.com/liaison-inc/image/upload/f_auto/q_auto,w_1200/v1743682887/content/homeguide/homeguide-professional-pressure-washing-of-home-driveway.jpg" alt="Van Wrap Design Showcase">
+            </div>
+        </div>
+    </section>
+
+    <!-- Van Design Section -->
+    <section class="van-design" id="design">
+        <div class="container">
+            <div class="section-title">
+                <h2>Van Wrap Design</h2>
+                <p>Partial wrap design for 2024 Renault Traffic LWB Pro 2.0L Van featuring all business elements</p>
+            </div>
+            
+            <div class="van-showcase">
+                <div class="van-view">
+                    <h3>Side View</h3>
+                    <img src="https://static.vecteezy.com/system/resources/previews/031/192/991/large_2x/white-van-side-view-photo.jpg" alt="Van Side View">
+                </div>
+                <div class="van-view">
+                    <h3>Rear View</h3>
+                    <img src="https://static.vecteezy.com/system/resources/previews/031/192/988/large_2x/van-back-view-photo.jpg" alt="Van Rear View">
+                </div>
+                <div class="van-view">
+                    <h3>Bonnet View</h3>
+                    <img src="https://thumbs.dreamstime.com/b/van-car-open-door-front-view-d-rendering-98106596.jpg" alt="Van Bonnet View">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Design Features</h2>
+                <p>Key elements incorporated in the van wrap design</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Pressure Washing</h3>
+                    <p>Highlighted as primary service with dynamic water imagery</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Soft Washing</h3>
+                    <p>Gentle cleaning method prominently displayed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sealing</h3>
+                    <p>Protection service clearly presented</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Large Phone Number</h3>
+                    <p>Over 1 meter long for maximum visibility</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Social Media</h3>
+                    <p>Facebook and Instagram logos integrated</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>5-Star Rating</h3>
+                    <p>Google rating with 5 stars prominently displayed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our customers say about our services</p>
+            </div>
+            
+            <div class="google-rating">
+                <img src="https://t4.ftcdn.net/jpg/06/09/46/51/360_F_609465181_gX4LZamaucGGK3yUIcgS8vEs8W0EiGpU.jpg" alt="Google 5 Star Rating">
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"I couldn't be more impressed."</p>
+                    <h4>D Cunningham</h4>
+                </div>
+                <div class="review-card">
+                    <p>"They were 1st class, fabulous communication."</p>
+                    <h4>R Dejoode</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Easy to deal with, fantastic job."</p>
+                    <h4>L Manson</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Reliable and lovely to deal with."</p>
+                    <h4>R Hill</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for your pressure cleaning needs</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone: **********</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: ****@********************</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Website: www.diamondpressurewashingperth.com.au</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://via.placeholder.com/40x40?text=Logo" alt="Diamond Pressure Washing Logo">
+                    <h2>Diamond Pressure Washing</h2>
+                </div>
+                
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#design">Van Design</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Diamond Pressure Washing Perth. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form submission
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (name && email && message) {
+                // Create success message
+                const successMessage = document.createElement('div');
+                successMessage.style.backgroundColor = '#4CAF50';
+                successMessage.style.color = 'white';
+                successMessage.style.padding = '15px';
+                successMessage.style.marginTop = '20px';
+                successMessage.style.borderRadius = '5px';
+                successMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+                
+                // Add success message to form
+                this.appendChild(successMessage);
+                
+                // Reset form
+                this.reset();
+                
+                // Remove success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
